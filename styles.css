@@ -3,12 +3,10 @@ html, body {
     margin: 0; padding: 0;
   }
 
-  .main_Body {
-    height: 300px;
-    border: 2px red solid;
-
+.main_Body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    height: 500px;
+    grid-template-columns: 1fr 5fr;
 }
 .menu {
     border: 2px red solid;
@@ -21,8 +19,8 @@ html, body {
     align-self: center;
     margin: 0 auto;  
 }
-.derawingBoard{
+.drawing{
     display: grid;
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: 500 px;
 }
