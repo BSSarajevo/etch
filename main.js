@@ -1,5 +1,8 @@
-let sizeDrawing = 16;
+let sizeDrawing = 5;
+let size=Math.pow(2,document.querySelector(".slider").value) ;
+document.querySelector(".sliderValue").innerHTML=size;
 boardCreation(sizeDrawing);
+
 
 
 const pixel=document.querySelectorAll(".pixel");
@@ -8,16 +11,17 @@ pixel.forEach(element => {
     element.addEventListener(
         "mouseover",
         (event) => {
-          // highlight the mouseover target
           event.target.style.backgroundColor = "orange";
-            
-          console.log("sss");
+          console.log(element.id);
         },
         false
       );    
 });
 
-
+document.querySelector(".slider").oninput = function(){
+    console.log(this.value);
+    document.querySelector(".sliderValue").textContent=this.value;
+}
 
 
 
