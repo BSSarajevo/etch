@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Drawing board</title>
-    
+
 </head>
+
 <body>
     <div class="hadder">Headder</div>
     <div class="main_Body">
         <div class="menu">
-            <button >Black</button>
-            <button>Rainnbow</button>
-            <button>Erase</button>
-            <div class="sliderSize">
-            <input type="range" class="slider" id="points" value="4" min="3" max="7" step="1" > 
-            <label class="sliderValue"></label>
+            <div class="buttons">
+                <button id='Black'>Black</button>
+                <button id="random">Rainnbow</button>
+                <button id="white">Erase</button>
             </div>
-            
+
+            <div class="sliderSize">
+                <input type="range" class="slider" id="points" value="2" min="2" max="6" step="1">
+                <label class="sliderValue"></label>
+            </div>
+
         </div>
         <div class="drawing"></div>
     </div>
 </body>
 <script src="main.js"></script>
+
 </html>
